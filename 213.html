@@ -1,0 +1,20 @@
+function count(){
+    var x= document.getElementById("txt1").value;
+    var y= document.getElementById("txt2").value;
+    var z= document.getElementById("select").value;
+    var n;
+    switch(z){
+         case "+":
+            n=x+y;
+            break;
+        case "-":
+            n=x-y;
+            break;
+        case "*":
+            n =x*y;
+            break;
+        default:
+            n = parseInt(x / y);
+    }
+    document.getElementById("fruit").value = n;
+}
